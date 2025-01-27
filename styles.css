@@ -1,0 +1,121 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'FuenteNueva';
+  src: url('fuentes/Playwrite_VN/PlaywriteVN-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal; /* Puedes cambiarlo según el peso de la fuente */
+  font-style: normal;  /* Puedes cambiarlo a italic si es cursiva */
+}
+
+
+body {
+  font-family: FuenteNueva;
+  background-color: #f8f3f9;
+  color: #e955b5;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'FuenteNueva';
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+/* Servicios */
+.services {
+  background-color: #f8bbd0;
+  padding: 2rem;
+}
+
+.service-card {
+  background-color: #ffffff;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-card img {
+  border-radius: 10px;
+}
+
+/* Experiencia */
+.experience {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.experience p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Galería */
+.gallery {
+  background-color: #f8bbd0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+/* Contacto */
+.contact {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.contact a {
+  color: #6a1b9a;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card {
+    max-width: 90%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
