@@ -1,0 +1,324 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'FuenteNueva';
+  src: url('fuentes/Playwrite_VN/PlaywriteVN-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal; 
+  font-style: normal;
+}
+
+body {
+  font-family: FuenteNueva;
+  background-color: #f8f3f9;
+  color: #940d65;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'FuenteNueva';
+  color: rgb(86, 10, 79);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  background-image: url("fotos/Experiencia/FondoSinFlor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.logo {
+  max-width: 250px; /* Tamaño máximo para evitar que sea demasiado pequeño */
+  width: 30%; /* Ajuste de tamaño para pantallas grandes */
+}
+
+/*Menu horizontal*/
+.menu{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+
+}
+.menu a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+}
+.menuA{
+  background-color: #f8bbd0;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+.menu a:hover{
+  color: #2a0541;
+}
+/* Estilos del Menú Hamburguesa */
+.menu-icono {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+#menu {
+  display: none;
+}
+main{
+  margin-top: 1%;
+}
+/* Servicios */
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 1rem;
+}
+.servicios-tarjeta {
+  background-color: #ffffff;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 350px;
+  text-align: center;
+}
+
+.servicios-tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+ /* Estilo del botón de "Volver arriba" */
+ .boton-arriba {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  display: none; /* Inicialmente oculto */
+  opacity: 0.8;
+}
+/* Contenedor redondo de la flecha */
+.boton-arriba p {
+  background-color: rgba(115, 62, 95, 0.7);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  opacity: 0.5;
+}
+
+.boton-arriba:hover {
+  opacity: 2;
+}
+
+
+.boton-arriba {
+  display: block;
+}
+
+/* Experiencia */
+.experiencia {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  background-image: url("fotos/Experiencia/FondoConFlor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.experiencia p{
+  line-height: 3 !important;
+}
+
+.experiencia p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Galería */
+.galeria {
+  background-color: #f8bbd0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+  gap: 20px; /* Espaciado entre imágenes */
+  margin-top: 1rem;
+}
+
+.galeria-foto {
+  text-align: center;
+}
+
+.galeria-foto img {
+  width: 100%; /* Esto lo cambiamos para tener un tamaño fijo */
+  max-width: 300px; /* Ancho máximo de la imagen */
+  height: 250px; /* Altura fija */
+  object-fit: cover; /* Mantiene la proporción y recorta lo necesario */
+  border-radius: 10px;
+  margin: 0 auto; /* Centra la imagen dentro del contenedor */
+  box-shadow: 0 4px 6px rgba(0, 0.5, 0.5, 0.5);
+}
+
+.creador{
+  margin-top: 10px;
+  text-align: right;
+  color: black;
+}
+/* Contacto */
+.contacto {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  background-image: url("fotos/Experiencia/FondoSinFlor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contacto ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+.contacto ul li {
+  display: flex; /* Hace que el li use flexbox */
+  align-items: center; /* Alinea verticalmente */
+  justify-content: center; /* Centra horizontalmente si es necesario */
+}
+.contactoLogos{
+  width: 40px;
+  height: 40px;
+}
+.contacto a {
+  color: #6a1b9a;
+  text-decoration: none;
+}
+.contacto a:hover {
+  color: #240636
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila en pantallas medianas */
+  }
+
+  .galeria-foto img {
+    max-width: 250px; /* Ancho máximo ajustado para pantallas más pequeñas */
+    height: 190px; /* Altura ajustada para pantallas más pequeñas */
+  }
+
+  .servicios{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header h1{
+    font-size: 25px;
+  }
+
+h2,h3{
+    font-size: 20px;
+  }
+  
+  .logo {
+
+    width: 30%; /* Ajuste de tamaño para pantallas grandes */
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-grid {
+    grid-template-columns:repeat(1, 1fr); /* 1 columna por fila en pantallas muy pequeñas */
+  }
+
+  .galeria-foto img {
+    max-width: 200px; /* Ancho máximo ajustado para pantallas muy pequeñas */
+    height: 160px;
+  }
+
+  .servicios{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header h1{
+    font-size: 20px;
+  }
+
+  h2,h3{
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .servicios-tarjeta img {
+    width: 100%;
+    height: 150px;
+  }
+  .servicios-tarjeta {
+    width: 200px;
+    max-height: 280px;
+  }
+  .servicios-tarjeta p{
+    display: none;
+  }
+
+   .menu {
+    display: none;
+    flex-direction: column;
+    background: #f8bbd0;
+    position: relative;
+    gap: 5px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menu a{
+    font-size: 15px;
+  }
+  .menu-icono {
+    display: block;
+    color: rgb(86, 10, 79);
+  }
+
+  /* Mostrar menú cuando el checkbox está activado */
+  #menu:checked + .menu-icono + .menu {
+    display: flex;
+    max-width: 100px;
+  }
+}
