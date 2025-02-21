@@ -1,2 +1,0 @@
-# ElenaBeauty
-Web Elena Beauty
